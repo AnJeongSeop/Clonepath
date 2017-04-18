@@ -29,7 +29,12 @@ public class ex55 {
 
 		System.out.println("입력한 숫자들의 합 = " + sum);
 		System.out.println("입력한 숫자들의 곱 = " + gop);
+		for (k = 0; k < num.length; k++) {
+			System.out.println("입력한 숫자들 = " + num[k]);
+		}
+		
 
 	}
+
 
 }
