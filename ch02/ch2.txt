@@ -1,0 +1,35 @@
+package a1;
+
+import java.util.Scanner;
+
+public class ex55 {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		int i, j, k;
+		Scanner n = new Scanner(System.in);
+		Scanner m = new Scanner(System.in);
+		double sum = 0, gop = 1;
+		System.out.println("입력 할 숫자의 갯수를 입력하시오");
+		i = n.nextInt();
+		double[] num = new double[i];
+
+		for (j = 0; j < i; j++) {
+			System.out.println(j + 1 + "번째 숫자를 입력하시오");
+			num[j] = m.nextDouble();
+		}
+		for (k = 0; k < num.length; k++) {
+			sum += num[k];
+
+		}
+		for (k = 0; k < num.length; k++) {
+			gop *= num[k];
+
+		}
+
+		System.out.println("입력한 숫자들의 합 = " + sum);
+		System.out.println("입력한 숫자들의 곱 = " + gop);
+
+	}
+
+}

@@ -1,0 +1,47 @@
+package a1;
+
+import java.util.*;
+
+public class Newproject {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		Scanner s = new Scanner(System.in);
+		Random r = new Random();
+		System.out.println("축구게임을 시작합니다.내가 공을 찹니다 어느 쪽으로 차시겠습니까?");
+		int a = s.nextInt();
+		int b = r.nextInt(3)+1;
+		
+		if(a==1 && b==2){
+			System.out.println("공을 왼쪽으로 찼습니다.");
+			System.out.println("골인입니다");
+		}else if(a==1 && b==3){
+			System.out.println("공을 왼쪽으로 찼습니다");
+			System.out.println("골인입니다");
+		}else if(a==1 && b==1){
+			System.out.println("공을 왼쪽으로 찼습니다");
+			System.out.println("골키퍼가  골을 막았습니다");
+		}else if(a==2 && b==3){
+			System.out.println("공을 가운데로 찼습니다");
+			System.out.println("골인입니다");
+		}else if(a==2 && b==1){
+			System.out.println("공을 가운데로 찼습니다");
+			System.out.println("골인입니다");
+		}else if(a==2 && b==2){
+			System.out.println("공을 가운데로 찼습니다");
+			System.out.println("골키퍼가 골을 막았습니다");
+		}else if(a==3 && b==1){
+			System.out.println("공을 오른쪽으로 찼습니다");
+			System.out.println("골인입니다");
+		}else if(a==3 && b==2){
+			System.out.println("공을 오른쪽으로 찼습니다");
+			System.out.println("골인입니다");
+		}else if(a==3 && b==3){
+			System.out.println("공을 오른쪽으로 찼습니다");
+			System.out.println("골키퍼가 골을 막았습니다");
+		}else{
+			System.out.println("다시 입력해주세요");
+		}
+		}
+
+}
